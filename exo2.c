@@ -13,7 +13,7 @@ typedef struct {
     int numeroColonne;
 } caseLabyrinthe;
 
-/*void lireLaby(laby L, char nomFichier[30]) {
+void lireLaby(laby L, char nomFichier[30]) {
     FILE* fic;
     caseLabyrinthe case;
     fic = fopen(nomFichier, "r");
@@ -26,7 +26,7 @@ typedef struct {
     L[1][0] = 'O';
 
     fclose(fic);
-}*/
+}
 
 void afficherLaby(laby L) {
     for (int i = 0; i < NBLIGNE; i++) {
